@@ -1,0 +1,158 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    max-width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: font-size 0.3s;
+}
+
+nav a:hover {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#imageGallery {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imageGallery img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+    display: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #555;
+    border-radius: 10px 10px 0 0;
+}
+
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    nav.main-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.main-nav a {
+        margin: 5px 0;
+    }
+}
+@media (max-width: 768px) {
+    #imageGallery img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    #imageGallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imageGallery img {
+        max-width: 100%;
+        width: 80%;
+        margin: 10px 0; 
+    }
+}
+@media (max-width: 768px) {
+    #imageGallery img {
+        margin: 5px 0; 
+    }
+}
+section {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+#apps {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#apps h2 {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.app-description {
+    font-size: 16px;
+    color: #555;
+}
+
+.app img {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.app:hover img {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+

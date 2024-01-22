@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Control</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="imagenes/logo-modified.png" type="image/png">
+
+</head>
+
+<body>
+    <header class="bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <img src="imagenes/logo-modified.png" alt="Logo de Alonso Corporation DB">
+                </div>
+                <div class="col-10">
+                    <h1>AlonsoCorporationDB</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acercaDe.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="apps.html">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="apps" class="my-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 text-center mb-4">
+                    <img src="imagenes/ic_launcher-playstore.png" alt="Mi Taller" class="img-fluid rounded mb-3"
+                        style="max-width: 200px;">
+                    <h2 class="mb-4">Conoce Mi Control</h2>
+                </div>
+                <script>
+                    var textos = [
+                        "Mi control es una app para movil especializada para usuarios qué desean una organización y control de sus citas, inventario, ventas, compras, ingresos y egresos.",
+                        " ",
+                        "Crea tus servicios para poder agregarlos al momento de crear las citas.",
+                        "Crea tu cita y añade qué servicio es para la cita actual.",
+                        "Listo has creado tu cita, mi control cuenta con todos los ingresos generados en el dia(corte de caja) y el historial de lo que se hizo durante el mismo.",
+                        "Tambien cuenta con todos los ingresos por mes.",
+                        "Cuenta con todo el historial para un mejor manejo de información y la opción de poder editarlo.",
+                        "Historial de tus servicios creados.",
+                        "Con mi control también tienes tu inventario de productos, agrega qué productos vendes y mi control hace el resto.",
+                        "Añade tu producto, escanea su código de barras para el momento de compra o venta se mucho más fácil y rápido encontrar el productos, además si deseas añade una imagen y descuento.",
+                        "Mi control es una app inteligente para tu negocio, te dice que productos son los más vendidos y ayuda a que tu negocio crezca.",
+                        "Crea tus ventas con Mi Control.",
+                        "Selecciona todos los productos vendidos y realiza tu venta, si deseas realizar un pdf sobre tu venta ve a editar venta y da click en pdf, mi control te realiza tu ticket de venta.",
+                        "Haz creado tu venta.",
+                        "Con mi control puedes ver todos tus Ingresos de ventas.",
+                        "Así como el historial de ventas y compras.",
+                        "Si deseas ver todas las ganancias puedes ver de forma general, incluye ingresos y egresos.",
+                        "Despreocupate qué toda tu información se pierda, crea una copia de seguridad. También personaliza mi control como tu desees, Mi Control es tu mejor opción.",
+                    ];
+                    for (var i = 1; i <= textos.length; i++) {
+                        document.write(`
+                            <div class="col-md-6 text-center">
+                                <img src="imagenes/MiControl-${i}.jpeg" alt="Imagen Mi Control ${i}" class="img-fluid rounded mb-3">
+                                <p class="lead">${textos[i - 1]}</p>
+                            </div>
+                        `);
+                    }
+                </script>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2024 AlonsoCorporationDB. Todos los derechos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
